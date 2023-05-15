@@ -90,6 +90,20 @@ section {
   padding: 0 !important;
 }
 
+.row{
+  width: 100%;
+}
+.row_cell {
+  width: 270px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+  margin: 1em 1em;
+  border: solid 1.5px #27ae60;
+  border-radius: 25px;
+}
+
+
 .sec2 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
