@@ -15,8 +15,8 @@ padding: 0;
 
 
 :root {
-  --color-primary: #191d2b;
-  --color-secondary: #27ae60;
+  --color-primary: #3a3a3a; /* Change the primary color */
+  --color-secondary: #ff6347; /* Change the secondary color */
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -31,8 +31,8 @@ padding: 0;
 }
 
 .light-mode {
-  --color-primary: #ffffff;
-  --color-secondary: #f56692;
+  --color-primary: #ffffff; /* Change the primary color for light mode */
+  --color-secondary: #f56692; /* Change the secondary color for light mode */
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
