@@ -7,11 +7,11 @@
 }
 
 .header-content { 
-background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIhbl3h3KCjZgrQN2LRN4GfSvGUFF2oh6HQ&s);
-/* background-repeat: no-repeat; */
-margin: 0; 
-padding: 0; 
- }
+  background-image: url("your-image-link-here");
+  background-size: cover;       /* makes image fill the whole area */
+  background-position: center;  /* keeps it centered */
+  background-repeat: no-repeat; /* stops the tiling */
+}
 
 
 :root {
