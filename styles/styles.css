@@ -9,7 +9,7 @@
 .header-content {
   background-image: linear-gradient(
       rgba(79, 140, 255, 0.2),
-      rgba(255,255,255,0.2)
+      #EEEEEE
     ),
     url("https://i.pinimg.com/1200x/72/b0/f4/72b0f47c4f1ee561e1311a2aa191f8f5.jpg");
   background-size: cover;
