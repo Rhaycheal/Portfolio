@@ -5,7 +5,7 @@
   list-style: none;
 }
 
-/* HEADER BACKGROUND (UPDATED) */
+/* HEADER BACKGROUND */
 .header-content {
   background-image: linear-gradient(
       rgba(79, 140, 255, 0.2),
@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
 }
 
-/* MODERN COLOR SYSTEM */
+/* COLOR SYSTEM */
 :root {
   --color-primary: #f5f9ff;
   --color-secondary: #4f8cff;
@@ -38,8 +38,9 @@
   --box-shadow-1: 0 8px 25px rgba(79, 140, 255, 0.15);
 }
 
+/* BODY */
 body {
-  background-color: var(--color-primary);
+  background: linear-gradient(135deg, #f5f9ff, #eef4ff);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
@@ -52,6 +53,7 @@ a {
   color: inherit;
 }
 
+/* LAYOUT */
 header {
   min-height: 100vh;
   overflow: hidden;
@@ -69,28 +71,14 @@ section {
 .section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
-  background-color: var(--color-primary);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
 }
 
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
   padding: 0 !important;
-}
-
-.row {
-  width: 100%;
-}
-
-.row_cell {
-  width: 270px;
-  height: 100px;
-  display: inline-block;
-  text-align: center;
-  margin: 1em;
-  border: solid 1.5px var(--color-secondary);
-  border-radius: 20px;
-  background: #fff;
 }
 
 .sec2, .sec3, .sec4, .sec5 {
@@ -117,7 +105,6 @@ section {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .controlls .control {
@@ -131,7 +118,18 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0.7rem 0;
-  box-shadow: 0 5px 15px rgba(79, 140, 255, 0.15);
+
+  box-shadow: 
+    0 8px 20px rgba(79, 140, 255, 0.15),
+    0 2px 6px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.controlls .control:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 25px rgba(79, 140, 255, 0.25);
 }
 
 .controlls .active-btn {
@@ -179,7 +177,6 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.95) contrast(1.05);
 }
 
 .right-header {
@@ -203,7 +200,7 @@ section {
   color: var(--color-grey-3);
 }
 
-/* ABOUT CARDS */
+/* ABOUT */
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -216,7 +213,7 @@ section {
 }
 
 .about-item {
-  background: #fff;
+  background: linear-gradient(145deg, #ffffff, #f3f7ff);
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -228,36 +225,42 @@ section {
   box-shadow: 0 15px 40px rgba(79, 140, 255, 0.2);
 }
 
-.large-text {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-
-.small-text {
-  color: var(--color-grey-3);
-}
-
-/* BUTTON */
+/* BUTTON (FIXED) */
 .main-btn {
-  border-radius: 30px;
+  border-radius: 50px;
   font-weight: 600;
   border: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  overflow: hidden;
+  gap: 0.8rem;
+  padding: 0.6rem 1.2rem;
   background: linear-gradient(135deg, #4f8cff, #00c9a7);
   color: #fff;
+  transition: all 0.3s ease;
 }
 
 .btn-text {
-  padding: 0 2rem;
+  padding: 0;
 }
 
 .btn-icon {
-  background-color: rgba(255,255,255,0.2);
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+
+.btn-icon i {
+  font-size: 0.9rem;
+}
+
+.main-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(79, 140, 255, 0.3);
 }
 
 /* PORTFOLIO */
@@ -267,14 +270,7 @@ section {
   gap: 2rem;
 }
 
-.portfolio-item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-/* BLOGS */
+/* BLOG */
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -288,20 +284,11 @@ section {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.blog img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
 /* CONTACT */
-.contact-content-con {
-  display: flex;
-}
-
 .contact-icon a {
   background: #fff;
   color: var(--color-secondary);
+  box-shadow: 0 6px 15px rgba(79, 140, 255, 0.15);
 }
 
 /* MOBILE */
